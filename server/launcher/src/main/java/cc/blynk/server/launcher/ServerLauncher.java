@@ -98,9 +98,9 @@ public final class ServerLauncher {
                 restore);
 
         BaseServer[] servers = new BaseServer[] {
-                new HardwareAndHttpAPIServer(holder),
-                new MobileAndHttpsServer(holder),
-                new MQTTHardwareServer(holder)
+//                 new HardwareAndHttpAPIServer(holder),
+                new MobileAndHttpsServer(holder)// ,
+//                 new MQTTHardwareServer(holder)
         };
 
         if (startServers(servers)) {
