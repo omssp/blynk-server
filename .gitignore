@@ -2,5 +2,8 @@
 *.iml
 .idea
 target
+client
+integration-tests
+integration-test
 *.log
 dependency-reduced-pom.xml
