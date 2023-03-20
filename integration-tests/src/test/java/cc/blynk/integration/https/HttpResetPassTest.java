@@ -131,7 +131,7 @@ public class HttpResetPassTest extends BaseTest {
 
     @Test
     public void getRestorePageXss3() throws Exception {
-        String token = "a".repeat(63) + "/";
+        String token = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/";
         HttpGet getRestorePage = new HttpGet(httpServerUrl + "/restore?token=" + token);
 
         try (CloseableHttpResponse response = httpclient.execute(getRestorePage)) {
